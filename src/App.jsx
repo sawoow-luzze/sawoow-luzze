@@ -64,12 +64,14 @@ export default function App() {
   const goToContact = () => setCurrent(3);
 
   return (
-    <div style={{ margin: 0, padding: 0 }}>
+    <div style={{ margin: 0, padding: 0, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Nav current={current} setCurrent={setCurrent} />
-      {current === 0 && <Home onBook={openBooking} />}
-      {current === 1 && <WhyLuzze onBook={openBooking} onContact={goToContact} />}
-      {current === 2 && <Services onBook={openBooking} onContact={goToContact} />}
-      {current === 3 && <Contact />}
+      <main style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+        {current === 0 && <Home onBook={openBooking} />}
+        {current === 1 && <WhyLuzze onBook={openBooking} onContact={goToContact} />}
+        {current === 2 && <Services onBook={openBooking} onContact={goToContact} />}
+        {current === 3 && <Contact />}
+      </main>
       <Footer onOpenLegal={setLegal} />
       <WhatsAppFab />
       {booking && <BookingModal service={booking} onClose={() => setBooking(null)} />}

@@ -10,7 +10,7 @@ export default function Home({ onBook }) {
           background: "#4A5C6A",
           display: "flex",
           alignItems: "center",
-          paddingTop: 80,
+          paddingTop: 72,
           position: "relative",
           overflow: "hidden",
         }}
@@ -30,9 +30,9 @@ export default function Home({ onBook }) {
           style={{
             maxWidth: 1200,
             margin: "0 auto",
-            padding: "60px 24px",
+            padding: "32px 24px",
             display: "flex",
-            gap: 60,
+            gap: 48,
             alignItems: "center",
             flexWrap: "wrap",
           }}
@@ -45,7 +45,7 @@ export default function Home({ onBook }) {
                 letterSpacing: 4,
                 textTransform: "uppercase",
                 color: "#3EA8C8",
-                marginBottom: 24,
+                marginBottom: 16,
                 fontWeight: 600,
               }}
             >
@@ -58,7 +58,7 @@ export default function Home({ onBook }) {
                 color: "#fff",
                 lineHeight: 1.2,
                 fontWeight: 400,
-                margin: "0 0 32px",
+                margin: "0 0 24px",
               }}
             >
               For those ready to return home to Uganda,
@@ -97,7 +97,7 @@ export default function Home({ onBook }) {
             style={{
               flex: "1 1 400px",
               minWidth: 280,
-              height: 500,
+              height: 440,
               display: "flex",
               alignItems: "flex-end",
               justifyContent: "center",
@@ -107,7 +107,7 @@ export default function Home({ onBook }) {
       </section>
 
       <section
-        style={{ background: "#4A5C6A", padding: "100px 24px", position: "relative" }}
+        style={{ background: "#4A5C6A", padding: "64px 24px 72px", position: "relative" }}
       >
         <div
           style={{
@@ -126,7 +126,7 @@ export default function Home({ onBook }) {
               fontSize: "clamp(28px, 4vw, 44px)",
               color: "#fff",
               fontWeight: 400,
-              marginBottom: 40,
+              marginBottom: 24,
               fontStyle: "italic",
             }}
           >
@@ -137,8 +137,8 @@ export default function Home({ onBook }) {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: 18,
               color: "rgba(255,255,255,0.85)",
-              lineHeight: 1.8,
-              marginBottom: 24,
+              lineHeight: 1.7,
+              marginBottom: 16,
             }}
           >
             We guide members of the African diaspora to confidently reconnect with
@@ -149,8 +149,8 @@ export default function Home({ onBook }) {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: 16,
               color: "rgba(255,255,255,0.7)",
-              lineHeight: 1.8,
-              marginBottom: 24,
+              lineHeight: 1.7,
+              marginBottom: 16,
             }}
           >
             Our work bridges the gap between global professionalism and local realities.
@@ -163,20 +163,20 @@ export default function Home({ onBook }) {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: 16,
               color: "rgba(255,255,255,0.7)",
-              lineHeight: 1.8,
-              marginBottom: 48,
+              lineHeight: 1.7,
+              marginBottom: 32,
             }}
           >
             Our approach is simple: guided, protected, and transparent.
           </p>
           <div
-            style={{ display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}
+            style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap" }}
           >
             {["Guided", "Protected", "Transparent"].map((v, i) => (
               <div
                 key={i}
                 style={{
-                  padding: "20px 40px",
+                  padding: "16px 28px",
                   border: "1px solid rgba(62,168,200,0.4)",
                   fontFamily: "'Playfair Display', serif",
                   fontSize: 20,

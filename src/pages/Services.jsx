@@ -33,7 +33,7 @@ const services = [
 
 export default function Services({ onBook, onContact }) {
   return (
-    <div style={{ background: "#fff", minHeight: "100vh", paddingTop: 100 }}>
+    <div style={{ background: "#fff", flex: 1, paddingTop: 100, display: "flex", flexDirection: "column" }}>
     <section style={{ background: "#fff" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 60 }}>

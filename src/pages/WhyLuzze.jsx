@@ -15,7 +15,7 @@ const credentials = [
 
 export default function WhyLuzze({ onBook, onContact }) {
   return (
-    <section style={{ background: "#4A5C6A", minHeight: "100vh", paddingTop: 100 }}>
+    <section style={{ background: "#4A5C6A", flex: 1, paddingTop: 100 }}>
       <div
         style={{
           maxWidth: 1200,
