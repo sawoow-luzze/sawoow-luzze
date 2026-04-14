@@ -164,7 +164,10 @@ export default function PaymentForm({ service, onPaid, onBack }) {
             autoComplete="cc-number"
           />
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+        <div
+          className="luzze-payment-row"
+          style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}
+        >
           <div>
             <label style={labelStyle}>Expiry</label>
             <input

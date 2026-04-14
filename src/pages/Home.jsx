@@ -15,6 +15,7 @@ export default function Home({ onBook }) {
         }}
       >
         <div
+          className="luzze-hero-deco"
           style={{
             position: "absolute",
             top: 120,

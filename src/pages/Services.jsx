@@ -62,6 +62,7 @@ export default function Services({ onBook, onContact }) {
           {services.map((s, i) => (
             <div
               key={i}
+              className="luzze-services-card"
               style={{
                 flex: "1 1 300px",
                 minWidth: 280,

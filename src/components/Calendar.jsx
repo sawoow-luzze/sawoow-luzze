@@ -180,6 +180,7 @@ export default function Calendar({ onSelect }) {
               key={i}
               disabled={!selectable}
               onClick={() => setSelectedDate(d)}
+              className="luzze-calendar-day"
               style={{
                 padding: "10px 0",
                 border: "none",
@@ -246,6 +247,7 @@ export default function Calendar({ onSelect }) {
                     key={i}
                     disabled={s.busy}
                     onClick={() => onSelect(s)}
+                    className="luzze-slot"
                     style={{
                       padding: "10px 8px",
                       border: "1px solid",

@@ -65,28 +65,31 @@ export default function BookingModal({ service, onClose }) {
   return (
     <div
       onClick={onClose}
+      className="luzze-modal-backdrop"
       style={{
         position: "fixed",
         inset: 0,
         background: "rgba(30,40,48,0.75)",
         zIndex: 200,
         display: "flex",
-        alignItems: "flex-start",
+        alignItems: "center",
         justifyContent: "center",
         overflowY: "auto",
-        padding: "40px 16px",
+        padding: "32px 12px",
       }}
     >
       <div
         onClick={(e) => e.stopPropagation()}
+        className="luzze-modal"
         style={{
           background: "#fff",
           color: "#4A5C6A",
           width: "100%",
-          maxWidth: 560,
+          maxWidth: 640,
+          margin: "auto",
           borderRadius: 6,
           boxShadow: "0 30px 80px rgba(0,0,0,0.4)",
-          padding: 32,
+          padding: "clamp(20px, 4vw, 40px)",
           position: "relative",
           fontFamily: "'DM Sans', sans-serif",
         }}
@@ -128,11 +131,12 @@ export default function BookingModal({ service, onClose }) {
         <h2
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 28,
+            fontSize: "clamp(22px, 4vw, 30px)",
             fontWeight: 400,
             marginTop: 0,
             marginBottom: 24,
             color: "#4A5C6A",
+            paddingRight: 24,
           }}
         >
           {service.title}{" "}
