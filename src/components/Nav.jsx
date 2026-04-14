@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const pages = ["The Journey Starts Here", "Why Luzze", "Services", "Let's Connect"];
+const pages = ["Your Journey Starts Here", "Why Luzze?", "Services", "Let's Connect"];
 
 export default function Nav({ current, setCurrent }) {
   const [open, setOpen] = useState(false);

@@ -63,7 +63,7 @@ export default function Home({ onBook }) {
               For those ready to return home to Uganda,
               <br />
               <span style={{ fontStyle: "italic", color: "#3EA8C8" }}>
-                We make the journey
+                We make journey journey
               </span>
               <br />
               clear, guided, and safe.
